@@ -53,4 +53,4 @@ def reverse_comp ()
 def demultiplex ()
     ```docstring```
     input: two matching indexes corresponding to a read
-    expected output: write out to a new file with the full read and indexes appended to the end of he header
+    expected output: write out to a new file with the full read and indexes appended to the end of the header
