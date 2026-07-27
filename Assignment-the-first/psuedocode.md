@@ -1,6 +1,8 @@
 **problem:**
  
- We need to look through library prep files and demultiplex them and start a running sum of three categories: index matches, index hopping, and unknown indexes. This running sum will allows us to report the % of the indezes that fell into each of the categories. Each index pair will then be written to a new fastq file depending on which category it fell into ex:) 
+
+```
+We need to look through library prep files and demultiplex them and start a running sum of three categories: index matches, index hopping, and unknown indexes. This running sum will allows us to report the % of the indezes that fell into each of the categories. Each index pair will then be written to a new fastq file depending on which category it fell into ex:) 
 
 matched file names: (barcode).R1/R2(rev strand prev R4).fq
 unknown file names(2): unk.R1.fq, unk.R2.fq
@@ -10,9 +12,9 @@ when we write these reads to their corresponding file we will append the barcode
 By the end of this demultiplex there should be 48 fastq files (2 per 24 index), 2 unknown files, and 2 hopped files.
 
 after this process we can report the number of read pairs with properly matched indexes (per pair), the number of reads with index hopping present, and the number of unknown indexes(qual score too low or Ns present)
-
+```
 psuedocode:
-
+```
 shebang
 
 open indexes file
@@ -54,3 +56,4 @@ def demultiplex ()
     ```docstring```
     input: two matching indexes corresponding to a read
     expected output: write out to a new file with the full read and indexes appended to the end of the header
+```
