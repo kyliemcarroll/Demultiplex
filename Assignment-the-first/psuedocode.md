@@ -10,6 +10,16 @@ when we write these reads to their corresponding file we will append the barcode
 By the end of this demultiplex there should be 48 fastq files (2 per 24 index), 2 unknown files, and 2 hopped files.
 
 after this process we can report the number of read pairs with properly matched indexes (per pair), the number of reads with index hopping present, and the number of unknown indexes(qual score too low or Ns present)
+functions: do I need more?!?!
+
+def reverse_comp ()
+    ```docstring```
+    input: "ATCG"
+    expected output: "CGAT"
+def demultiplex ()
+    ```docstring```
+    input: two matching indexes corresponding to a read
+    expected output: write out to a new file with the full read and indexes appended to the end of he header
 
 psuedocode:
 
@@ -40,17 +50,8 @@ open four read files (R1, R2, R3, R4)
                 write R1 record R1 hopped file and append index to header
                 add to hopped dictionary -- R2/R3 is key and value is +1
                 write R4 record R4 hopped file and append index to header
+- add in quality score cut off to logical statement 
         else
             write R1 record R1 unknown file and append index to header
             +1 to unknown counter
             write R4 record R4 unknown file and append index to header
-
-functions: do I need more?!?!
-def reverse_comp ()
-    ```docstring```
-    input: "ATCG"
-    expected output: "CGAT"
-def demultiplex ()
-    ```docstring```
-    input: two matching indexes corresponding to a read
-    expected output: write out to a new file with the full read and indexes appended to the end of he header
