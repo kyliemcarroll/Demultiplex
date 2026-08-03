@@ -1,0 +1,56 @@
+@header1 2:N:0:1  [matched B1/B1]
+GTAGCGTA
++
+IIIIIIII
+@header2 2:N:0:1  [matched A5/A5]
+CGATCGAT
++
+IIIIIIII
+@header3 2:N:0:1  [matched C1/C1]
+GATCAAGG
++
+IIIIIIII
+@header4 2:N:0:1  [hopped B1(R2)/A5(R3)]
+GTAGCGTA
++
+IIIIIIII
+@header5 2:N:0:1  [hopped C7(R2)/B2(R3)]
+CACTTCAC
++
+IIIIIIII
+@header6 2:N:0:1  [hopped A1(R2)/C3(R3)]
+ACGATCAG
++
+IIIIIIII
+@header7 2:N:0:1  [unknown N in R2]
+GTANCGTA
++
+IIII#III
+@header8 2:N:0:1  [unknown N in R3]
+GTAGCGTA
++
+IIIIIIII
+@header9 2:N:0:1  [unknown R2 not in set]
+TTTTAAAA
++
+IIIIIIII
+@header10 2:N:0:1  [unknown R3 not in set]
+GATCAAGG
++
+IIIIIIII
+@header11 2:N:0:1  [unknown low avg qual]
+GTAGCGTA
++
+++++++++
+@header12 2:N:0:1  [unknown A2 known / R3 unknown]
+ATCATGCG
++
+IIIIIIII
+@header13 2:N:0:1  [matched B3/B3 exactly Q20]
+CTCTGGAT
++
+55555555
+@header14 2:N:0:1  [unknown C4/C4 avg 19.875]
+TACCGGAT
++
+45555555
